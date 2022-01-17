@@ -47,15 +47,16 @@ resetPoints = e =>{
   render() {
      return (
       <div className="trivia-container">
-        <h3>Score : {this.state.points}</h3>
         <h1>Welcome to Jeopardy!</h1>
+        <h3>Score : {this.state.points}</h3>
         <div className="button-Container">
-          <button onClick={this.decreasePoints}>Decrease</button>
-          <button onClick={this.increasePoints}>Increase</button>
-          <button onClick={this.resetPoints}>Reset</button>
+          <button id="decrease" onClick={this.decreasePoints}>Decrease</button>
+          <button id="increase" onClick={this.increasePoints}>Increase</button>
+          <button id="reset"    onClick={this.resetPoints}>Reset</button>
         </div>
-        <div>
-            <button onClick={this.handleSubmit} >Get Question</button>
+        <div className="second-Container">
+            <span id="play">Let's Play!</span>
+            <button id="getQuestion" onClick={this.handleSubmit} >Get Question</button>
         </div>
         <div>
           
@@ -65,7 +66,7 @@ resetPoints = e =>{
            <h4 id='reveal'> Question : {this.state.randomQuestion.answer}</h4>
         </div>
         <div>
-          <button onClick={this.showAnswer} >Click To Reveal the Question</button>
+          <button id="revealQuestion" onClick={this.showAnswer} >Click To Reveal the Question</button>
         </div>
 
       </div>

@@ -11,6 +11,98 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#trivia-container {
-   background-color: lightslategray;
+.trivia-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  padding: 20px;
+   background-color:lightgray;
+}
+
+h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white
+}
+h3{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: lightyellow;
+}
+
+#reveal{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: lightyellow;
+}
+.second-Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin : 30px;
+  width: 500px;
+  height: 40px;
+
+}
+
+#reset{
+  background-color: red;
+  border: none;
+  color:black;
+  padding:10PX;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 10px;
+}
+
+#increase{
+  background-color:darkcyan;
+  border: none;
+  color:black;
+  padding:10PX;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 10px;
+}
+#decrease{
+  background-color:indianred;
+  border: none;
+  color:black;
+  padding:10PX;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 10px;
+}
+
+#play{
+  color: blue;
+  font-size: 40px;
+}
+#getQuestion{
+  background-color:rgb(167, 205, 92);
+  border: none;
+  color:black;
+  padding:10PX;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 10px;
+}
+
+#revealQuestion{
+  background-color:royalblue;
+  border: none;
+  color:white;
+  width: 300px;
+  padding:10PX;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  /* border-radius: 10px; */
 }
