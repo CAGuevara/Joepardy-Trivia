@@ -34,14 +34,17 @@ class App extends Component {
   }
 
 increasePoints = e =>{
+  //Will increase the Score Points with the value of the question
   // console.log("inside increase Points");
   this.setState({points : this.state.points +=this.state.randomQuestion.value})
 }
 decreasePoints = e =>{
+  //Will decrease the Score Points with the value of the question
   // console.log("inside decrease Points");
   this.setState({points : this.state.points -=this.state.randomQuestion.value})
 }
 resetPoints = e =>{
+  //Will reset the Score Points to 0
   this.setState({points : this.state.points = 0})
 }
   render() {
